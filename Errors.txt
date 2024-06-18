@@ -1,1 +1,10 @@
-I put an entry in the Boxing topic but it doesn't appear there
+I have a 'Added the django-bootstrap4 app' commit. 
+Then I edited base.html file by adding bootstrap styles.
+Then I tried to run the project but apparently bootstrap4 wasn't installed for some reason because I saw errors when tried to use bootstrap in templates.
+After that, I ran django-bootstrap4 installation command once again. And Django got updated from 2.2.28 to 5.0 without even asking me
+So I decided to stash changes in base.html, return to a 'Added the django-bootstrap4 app' commit to discard the updating of Django.
+I did that but Django version remained the same.
+Why?
+So in a few words, I resetted to the last commit but it didn't reset.
+I tried to reset to even earlier commit but the Django version is still 5.0.
+Resume: django doesn't roll back with the commits for some reason
