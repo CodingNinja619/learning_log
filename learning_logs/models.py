@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 class Topic(models.Model):
     """A topic the user is learning about"""
     text = models.CharField(max_length=200)
-    date_added = models.TimeField(auto_now_add=True)
+    date_added = models.DateTimeField(auto_now_add=True)
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):

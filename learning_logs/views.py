@@ -20,6 +20,11 @@ def topics(request):
     context = {"topics": topics}
     return render(request, 'learning_logs/topics.html', context)
 
+def topics_list(request):
+    topics = Topic.objects.order_by("date_added")
+    for topic in topics:
+        print(topic, topic.date_added)
+
 @login_required
 def topic(request, topic_id):
     """The individual topic page"""

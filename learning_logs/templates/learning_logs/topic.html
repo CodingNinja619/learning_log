@@ -3,9 +3,7 @@
     <h3>{{topic}}</h3>
 {% endblock page_header %}
 {% block content %}
-    <p>Entries:</p>
-    <p><a href="{% url 'learning_logs:new_entry' topic.id %}">Add a new entry</a></p>
-    
+    <h4>Entries:</h4>
     {% if entries %}
         {% for entry in entries %}
             <div class="card mb-3">
@@ -21,4 +19,7 @@
     {% else %}
         <p>No entries for this topic yet.</p>
     {% endif %}
+    <h3>
+        <a href="{% url 'learning_logs:new_entry' topic.id  %}">Add a new entry</a>
+    </h3>
 {% endblock content %}
