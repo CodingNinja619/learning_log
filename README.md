@@ -12,7 +12,7 @@ A user can also register, log in and log out.
 Вы можете создавать темы и записи в них.
 
 Пользователь также может регистрироваться, делать логин и логаут
-https://github.com/CodingNinja619/learning_log/blob/master/1.png
+
 ![Home page](https://github.com/CodingNinja619/learning_log/blob/master/1.png)
 ![Register](https://github.com/CodingNinja619/learning_log/blob/master/2.png)
 ![Log in](https://github.com/CodingNinja619/learning_log/blob/master/10.png)
